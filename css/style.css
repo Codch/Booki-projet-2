@@ -1,0 +1,37 @@
+
+.navbar{
+    width: 900px;
+    height: 80px;
+    border-color: blue;
+    border-radius: 2px;
+    border : solid;
+    align-content: center;
+    margin; 0px 30px 0px 20px;
+    display: flex;
+    justify-content : space-between;
+    align-items : center 
+
+    
+}
+
+a {
+    text-decoration: none;
+}
+.navbar img{
+    text-align: left;
+    width: 50px;
+    margin: 20px 10px 10px 10px;
+}
+
+.headermenu{
+    color: black;
+    text-decoration: none;
+}
+
+.headermenu:hover{
+    color: darkcyan;
+}
+
+h1 {
+    color: red;
+}
