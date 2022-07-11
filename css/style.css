@@ -1,10 +1,8 @@
 
 .navbar{
-    width: 900px;
+    width: 98%;
     height: 80px;
-    border-color: blue;
-    border-radius: 2px;
-    border : solid;
+    margin-left: 10px;
     align-content: center;
     margin; 0px 30px 0px 20px;
     display: flex;
@@ -21,15 +19,36 @@ a {
     text-align: left;
     width: 50px;
     margin: 20px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .headermenu{
-    color: black;
-    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 20%;
+    
 }
 
-.headermenu:hover{
-    color: darkcyan;
+.headermenu a{
+    color: #5b5c5e;
+
+    display: flex;
+    height: 76px;
+    align-items: center;
+    
+}
+
+.headermenu a:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    
 }
 
 h1 {
