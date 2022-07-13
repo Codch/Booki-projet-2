@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6, p, a{
     display: flex;
     justify-content : space-between;
     align-items : center;
-    border : 2px solid blue;
+    border: 2px solid grey;
 
     
 }
@@ -27,7 +27,7 @@ a {
 .navbar img{
     text-align: left;
     width: 100px;
-    margin: 30px 10px 10px 10px;
+    margin-top: 5px;
     border: 2px solid blue;
     
 }
@@ -38,6 +38,10 @@ a {
     height: 100%;
     border: 2px solid blue;
     margin: 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
 }
 
 
@@ -47,11 +51,14 @@ a {
     flex-direction: row;
     height: 100%;
     width: 50%;
-    display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 0%;
+    text-align: center;
+    
     
 }
+
 
 .headermenu a{
     color: #5b5c5e;
@@ -62,21 +69,39 @@ a {
 
 .headermenu a:hover{
     color: #0065FC;
-    border-top: 2px solid #0065FC;
+    
     
 }
 
+.navbarlink:hover{
+    border-top: 2px solid #0065FC;
+}
 .navbarlink {
     margin-right: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0px 15px 0px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navbarlink a{
+    
+    
 }
 
 @media screen and (max-width: 768px) {
     .headermenu a:hover{
-        color: #0065FC;
+        
+    }
+    .navbarlink:hover{
         border-bottom: 2px solid #0065FC;
         border-top: 0px;
     }
 
+    .navbarlink{
+        width: 50%;
+    }
     .navbar {
         display: flex;
         flex-direction: column;
@@ -95,6 +120,8 @@ a {
 
     .headermenu {
         height: 50%;
+        display: flex;
+        justify-content: space-around;
     }
 }
 h1 {
