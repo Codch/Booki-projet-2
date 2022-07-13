@@ -1,33 +1,32 @@
-@font-face {
-    font-family: Raleway;
-    src: url(font/raleway);
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
+body{
+    @font-face {
+    font-family: Raleway, sans-serif;
+    src: url(font/raleway);
+}
+}
 h1, h2, h3, h4, h5, h6, p, a{
     font-family: raleway;
 }
 .navbar{
-    padding: 0%;
-    width: 98%;
+    width: 100%;
     height: 80px;
-    margin-left: 10px;
-    align-content: center;
-    margin; 0px 30px 0px 20px;
     display: flex;
     justify-content : space-between;
     align-items : center;
-    border: 2px solid grey;
-
-    
+    align-content: center;
+    border: 2px solid grey;  
 }
 
-a {
-    text-decoration: none;
-}
 .navbar img{
-    text-align: left;
     width: 100px;
-    margin-top: 5px;
+    margin-top: 10px;
     border: 2px solid blue;
     
 }
@@ -37,7 +36,6 @@ a {
     width: 50%;
     height: 100%;
     border: 2px solid blue;
-    margin: 0%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -46,7 +44,7 @@ a {
 
 
 .headermenu{ 
-    
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -55,6 +53,7 @@ a {
     align-items: center;
     padding: 0%;
     text-align: center;
+    border: 2px solid grey;
     
     
 }
@@ -77,17 +76,14 @@ a {
     border-top: 2px solid #0065FC;
 }
 .navbarlink {
-    margin-right: 20px;
     box-sizing: border-box;
     height: 100%;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 30px 0px 30px;
+    width: 15%;
+    min-width: 120px;
     display: flex;
     align-items: center;
-}
-
-.navbarlink a{
-    
-    
+    justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -100,12 +96,15 @@ a {
     }
 
     .navbarlink{
+        box-sizing: border-box;
         width: 50%;
+        min-width: 170px;
     }
     .navbar {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        justify-content: stretch;
     }
     
     .headerlogo {
@@ -117,14 +116,73 @@ a {
     .navbar img{
         margin: 0%;
     }
-
+ 
     .headermenu {
+        min-width: 344px;
         height: 50%;
         display: flex;
         justify-content: space-around;
+        
     }
 }
-h1 {
-    color: red;
-    
+
+main {
+    width: 98%;
+    margin: auto;
+  }
+
+  .title-h1 {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+  
+  .subtitle {
+    margin: 6px 0px;
+  }
+
+
+.research-box{
+    display: flex;
+
+}
+
+.icon-location{
+    width: 55px;
+    height: auto;
+    background-color: #F2F2F2;
+    border-radius: 14px 0 0 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fas fa-map-marker-alt{
+    font-size: 17px;
+}
+
+.research-bar{
+    padding-left: 20px;
+    height: 50px;
+    width: 220px;
+    border: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.research-bar::placeholder {
+    color: rgb(170, 170, 170);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.button-research{
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    width: 150px;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 14px 14px 0;
+    padding: 17px;
+    cursor: pointer;
 }
