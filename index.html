@@ -15,12 +15,10 @@
                 <div class="headerlogo"><a href="#"><img src="images/logo/Booki@3x.png" alt="logo"></a> 
                 </div>
                 <div class="headermenu">
-                    <div class="navbarlink" id="navarbar-link-accomodation">  
-                        <a href="#">Hébergements</a>
-                    </div>
-                    <div class="navbarlink" id="navbar-link-activities">
-                        <a href="#">Activités</a>
-                    </div>
+                     
+                        <a href="#" class="navbarlink" id="navarbar-link-accomodation">Hébergements</a>
+                        <a href="#" class="navbarlink" id="navbar-link-activities">Activités</a>
+                    
                 </div>
             </nav>
         </header> 
@@ -35,11 +33,18 @@
                 </div>
                 <input type="text" placeholder="Marseille, France" class="research-bar">
                 <button class="button-research" id="button-research">Rechercher</button>
+                <button class="button-research searchFormSubmitinputIcon fas fa-search" id="icon-glass"></button>
 
             </div>
 
-            <div>
-                <h3>Filtres</h3>
+            <div class="filters">
+                <h3 class="title-h2">Filtres</h3>
+                <ul class="filters-ul">
+                    <li class="filter-button"><i class="fas fa-money-bill-wave icon-filter"></i>Économique</li>
+                    <li class="filter-button"><i class="fas fa-child icon-filter"></i>Familiale</li>
+                    <li class="filter-button"><i class="fas fa-heart icon-filter"></i>Romantique</li>
+                    <li class="filter-button"><i class="fas fa-dog icon-filter"></i>Animaux autorisés</li>
+                </ul>
             </div>
         </main>
     </body>
