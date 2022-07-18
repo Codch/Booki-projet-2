@@ -3,10 +3,13 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
         
+        <script src="https://kit.fontawesome.com/da92682e8f.js" crossorigin="anonymous"></script>
+
         <title>Booki - Planifie tes vacances !</title>
     </head>
     <body>
@@ -23,28 +26,151 @@
             </nav>
         </header> 
         <main>
-            <div>
-                <h1 class="title-h1">Trouver votre hébergement pour des vacances de rêve</h1>
-                <p class="subtitle">En plein centre ville ou pleine nature</p>
-            </div>
-            <div class="research-box">
-                <div class="icon-location">
-                    <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h1 class="title-h1">Trouver votre hébergement pour des vacances de rêve</h1>
+                    <p class="subtitle">En plein centre ville ou pleine nature</p>
                 </div>
-                <input type="text" placeholder="Marseille, France" class="research-bar">
-                <button class="button-research" id="button-research">Rechercher</button>
-                <button class="button-research searchFormSubmitinputIcon fas fa-search" id="icon-glass"></button>
+                <div class="research-box">
+                    <div class="icon-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <input type="text" placeholder="Marseille, France" class="research-bar">
+                    <button class="button-research" id="button-research">Rechercher</button>
+                    <button class="button-research searchFormSubmitinputIcon fas fa-search" id="icon-glass"></button>
 
-            </div>
+                </div>
 
-            <div class="filters">
-                <h3 class="title-h2">Filtres</h3>
-                <ul class="filters-ul">
-                    <li class="filter-button"><i class="fas fa-money-bill-wave icon-filter"></i>Économique</li>
-                    <li class="filter-button"><i class="fas fa-child icon-filter"></i>Familiale</li>
-                    <li class="filter-button"><i class="fas fa-heart icon-filter"></i>Romantique</li>
-                    <li class="filter-button"><i class="fas fa-dog icon-filter"></i>Animaux autorisés</li>
-                </ul>
-            </div>
+                <div class="filters">
+                    <h3 class="title-h2">Filtres</h3>
+                    <ul class="filters-ul">
+                       <li class="filter-button"><i class="fas fa-money-bill-wave icon-filter"></i>Économique</li>
+                       <li class="filter-button"><i class="fas fa-child icon-filter"></i>Familiale</li>
+                       <li class="filter-button"><i class="fas fa-heart icon-filter"></i>Romantique</li>
+                       <li class="filter-button"><i class="fas fa-dog icon-filter"></i>Animaux autorisés</li>
+                    </ul>
+                </div>
+
+                <div class="info">
+                    <i class="fas fa-thin fa-circle-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div> 
+            <section class="blocs">
+                <div class="marseille-accomodation">
+                    <h2 class="title-h2" #title-2-accomodation>Hébergements à Marseille</h2>
+                    <div class="accomadation-bloc" id="auberge-la-cannebiere">
+                        <a href="#">
+                            <div class="marseille-case-img" id="room1">
+                                <img class="auberge-de-la-cannebiere-img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière">
+                            </div>
+                            <h3 class="title-h3">Auberge de la Cannebière</h3>
+                            <p class="hotel-price">Nuit à partir de 25€</p>
+                            <div class="stars">
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star empty-star"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="accomadation-bloc" id="Hôtel du port">
+                        <a href="#">
+                            <div class="marseille-case-img" id="room2">
+                                <img class="hotel-du-port-img" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port">
+                            </div>
+                            <h3 class="title-h3">Hôtel du port</h3>
+                            <p class="hotel-price">Nuit à partir de 52€</p>
+                            <div class="stars">
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="accomadation-bloc" id="hotel-les-mouettes">
+                        <a href="#">
+                            <div class="marseille-case-img" id="room3">
+                                <img class="marseille-case-img-host" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes">
+                            </div>
+                            <h3 class="title-h3">Hôtel les mouettes</h3>
+                            <p class="hotel-price">Nuit à partir de 76€</p>
+                            <div class="stars">
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star empty-star"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="accomadation-bloc" id="hotel-de-la-mer">
+                        <a href="#">
+                            <div class="marseille-case-img" id="room4">
+                                <img class="marseille-case-img-host" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                            </div>
+                            <h3 class="title-h3">Hôtel de la mer</h3>
+                            <p class="hotel-price">Nuit à partir de 46€</p>
+                            <div class="stars">
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star empty-star"></i>
+                                <i class="fas fa-star empty-star"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="accomadation-bloc" id="auberge-le-panier">
+                        <a href="#">
+                            <div class="marseille-case-img" id="room5">
+                                <img class="marseille-case-img-host" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier">
+                            </div>
+                            <h3 class="title-h3">Auberge le panier</h3>
+                            <p class="hotel-price">Nuit à partir de 23€</p>
+                            <div class="stars">
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star empty-star"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="accomadation-bloc" id="hotel-chez-amina">
+                        <a href="#">
+                            <div class="marseille-case-img" id="room6">
+                                <img class="marseille-case-img-host" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+                            </div>
+                            <h3 class="title-h3">Hôtel chez Amina</h3>
+                            <p class="hotel-price">Nuit à partir de 96€</p>
+                            <div class="stars">
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                                <i class="fas fa-star full-star"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <p class="show-more"><a href="#">Afficher plus</a></p>
+                </div>
+
+                <div class="marseille-most-popular">
+                </div>
+
+                <div class="marseille-activities">
+
+                </div>
+
+                
+            </section>    
+                
         </main>
     </body>

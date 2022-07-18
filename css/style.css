@@ -13,7 +13,7 @@ body{
 
 }
 h1, h2, h3, h4, h5, h6, p, a{
-    font-family: raleway;
+    font-family: raleway, sans-serif;
 }
 
 header, main{
@@ -90,6 +90,7 @@ header, main{
 
 .research-box{
     display: flex;
+    margin-bottom: 30px;
 }
 
 .icon-location{
@@ -140,6 +141,7 @@ header, main{
 
 .filters h3{
     font-size: 24px;
+    margin-bottom: 5px;
     
 }
 .filters{
@@ -165,7 +167,7 @@ header, main{
     border: solid #e2e2e2 2px;
     border-left: 0;
     border-radius: 200px;
-    margin-left: 20px;
+    margin : 0 0 5px 15px;
     padding-right: 15px;
     height: 100%;
     font-family: raleway, sans-serif;
@@ -188,6 +190,45 @@ header, main{
     justify-content: center;
     
 }
+
+.info{
+    margin-top: 40px;
+    display: flex;
+    
+}
+
+.info i{
+    color: #0065FC;
+    margin: 0 15px 15px 0;
+}
+
+.marseille-accomodation{
+    background-color: #5b5c5e;
+    width: 60%;
+    height: 500px;
+    padding: 20px;
+}
+
+.title-h2{
+    margin: 10px;
+    font-weight: bold;
+}
+
+.accomodation-bloc{
+    width: 25%;
+}
+
+.accomodation-bloc a{
+    display: block;
+    width: 20%;
+    height: 20%;
+}
+
+.marseille-case-img{
+    width: ;
+}
+
+
 @media screen and (max-width: 768px) {
     
     header, main{
@@ -231,6 +272,10 @@ header, main{
         font-size: 24px;
     }
 
+    .research-box{
+        margin-bottom: 10px;
+    }
+
    .button-research{
     border-radius: 14px;
    }
@@ -246,13 +291,19 @@ header, main{
 
     .filters{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     .filters-ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        
+    }
+
+    .filter-button{
+        margin-left: 5px;
     }
 }
 
@@ -297,5 +348,12 @@ header, main{
     }
     .title-h1{
         font-size: 24px;
+    }
+
+    .filters-ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
     }
 }
