@@ -207,6 +207,9 @@ header, main{
     width: 60%;
     height: 500px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .title-h2{
@@ -214,18 +217,24 @@ header, main{
     font-weight: bold;
 }
 
+.marseille-accomodation-no-title{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .accomodation-bloc{
-    width: 25%;
-}
-
-.accomodation-bloc a{
-    display: block;
     width: 20%;
-    height: 20%;
+    margin: 30px;
+    border: #0065FC solid 5px;
 }
 
-.marseille-case-img{
-    width: ;
+
+
+.accomodation-img{
+    height: 150px;
 }
 
 
