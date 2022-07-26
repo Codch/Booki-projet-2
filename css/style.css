@@ -196,16 +196,17 @@ header, main{
 .marseille-accomodation{
     background-color: #F2F2F2;
     padding: 20px;
-    width: 60%;
+    width: 66%;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .title-h2{
     margin: 10px;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
 .marseille-accomodation-no-title{
@@ -213,7 +214,7 @@ header, main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .accomodation-bloc{
@@ -225,9 +226,22 @@ header, main{
     background-color: white;
     text-decoration: none;
     display: inline-flex;
-    align-items: stretch;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.marseille-case-img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.accomodation-img{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
 }
 
 .title-h3{
@@ -238,6 +252,10 @@ header, main{
 .hotel-price{
     color: black;
     margin: 10px;
+}
+
+.price{
+    font-weight: bold;
 }
 
 .stars{
@@ -257,11 +275,7 @@ header, main{
     object-fit: cover;
 }
 
-.accomodation-img{
-    width: 100%;
-    height: 150px;
-    border-radius: 15px 15px 0 0;
-}
+
 
 .show-more a{
     font-weight: bold;
@@ -272,6 +286,58 @@ header, main{
 .show-more{
     margin: 30px 0 30px 10px;
 }
+
+.marseille-most-popular{
+    background-color: #F2F2F2;
+    padding: 20px;
+    margin: 0 30px ;
+    width: 33%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.most-popular-head{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.most-popular{
+    width: 90%;
+    height: 20%;
+    margin: 15px;
+    border:  solid 5px transparent;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px 0 #0000002e;
+    background-color: white;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.most-popular-case-img{
+    width: auto;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+}
+
+.most-popular-img{
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.marseille-accomodation-with-most-popular{
+    display: flex;
+    flex-direction: row;
+
+}
+
 @media screen and (max-width: 768px) {
     
     header, main{
