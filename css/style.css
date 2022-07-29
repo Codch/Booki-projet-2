@@ -194,95 +194,132 @@ header, main{
     margin: 0 15px 15px 0;
 }
 
-.marseille-accomodation{
-    background-color: #F2F2F2;
-    width: 66%;
-    padding: 30px;
-    border-radius: 30px;
+.marseille-accomodation-with-most-popular{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    gap: 30px;
 }
 
-.marseille-accomodation .title-h2{
-    margin: 0 0 10px 0;
-    font-weight: bold; 
+.marseille-accomodation-with-most-popular > div{
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    padding: 25px;
+}
+
+.marseille-accomodation{ 
+       
+    flex-basis: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    
+}
+
+.marseille-accomodation h2{
+    margin: 20px 0;
 }
 
 .marseille-accomodation-no-title{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-around;
-    gap: 10px;   
+    gap: 1rem;    
+}
+
+.marseille-accomodation-no-title a{
+    min-width: 30%;
+    max-width: 30%;
 }
 
 .accomodation-bloc{
-    border:  solid 5px transparent;
-    border-radius: 20px;
-    box-shadow: 0 2px 2px 0 #0000002e;
     background-color: white;
-    text-decoration: none;
-    min-width: calc((100%-100px)/3);
-    max-width: calc((100%-100px)/3);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-basis: calc(100%/3);
-    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 0 grey;
+    box-sizing: border-box;
+    padding: 5px;
     flex-grow: 1;
+    height: 100%;
     position: relative;
 }
 
-.marseille-case-img{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+.marseille-accomodation-with-most-popular p{
+    
+    color: black;
 }
 
-.accomodation-img{
+.marseille-accomodation-with-most-popular h3{
+    margin: 5px;
+    color: black;
+}
+
+.accomodation-bloc img{
+    border-radius: 10px 10px 0 0;
+    height: 120px;
     width: 100%;
-    height: 100px;
-    overflow: hidden;
     object-fit: cover;
-    object-position: 50% 50%;
-    border-radius: 15px 15px 0 0;
 }
 
-.accomodation-bloc .title-h3{
-    color: black;
-    margin: 10px 0 10px 10px;
-}
 
-.hotel-price{
-    color: black;
-    margin: 5px 0 40px 10px;
-}
 
-.price{
+.show-more{
     font-weight: bold;
+    color: black;
+    margin-top: 20px;
 }
 
-.stars{
-    margin: 10px;
-    position: absolute;
-    bottom: 0;
+.most-popular{
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.most-popular-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.most-popular-bloc{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 0 grey;
+    box-sizing: border-box;
+    padding: 5px;
     
 }
 
-.full-star{
-    color: #0065fC;
+.most-popular-bloc a{
+   
 }
 
-.empty-star{
-    color: #D9D9D9;
+.most-popular-case{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    
 }
 
-#hotel-de-la-mer-img, #hotel-chez-amina-img{
+.most-popular-img{
+    width: 60%;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+}
+
+.most-popular-img img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
+.most-popular-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 100%;
+    padding: 15px;
+}
 
 
 .show-more a{
@@ -296,78 +333,26 @@ header, main{
     margin: 30px 0 30px 10px;
 }
 
-.most-popular-head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    }
+.hotel-price{
+    margin-bottom: 25px;
+    margin-left: 5px;
+}
 
-.marseille-most-popular{
-    background-color: #F2F2F2;
-    padding: 20px;
-    margin: 0 30px ;
-    width: 33%;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.stars{
+    position: absolute;
+    bottom: 0;
+    margin: 5px;
+}
+
+.full-star{
+    color: #0065FC;
+}
+
+.empty-star{
+    color: #d9d9d9;
 }
 
 
-
-.most-popular-case{
-    height: 140px;
-    border:  solid 5px transparent;
-    border-radius: 20px;
-    box-shadow: 0 2px 2px 0 #0000002e;
-    background-color: white;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.most-popular-case-img {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    width: auto;
-    height: 100%;
-    border-radius: 15px 0 0 15px;
-  
-  }
-
-.most-popular-img{ 
-    width: 100%;
-    height: 100%;
-    border-radius: 20px 0 0 15px;
-    object-fit: cover;
-}
-
-.name-price-stars{
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.name-price{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.most-popular .case-text .hotel-name {
-    padding: 4px 0;
-    margin: 0;
-  }
-
-.marseille-accomodation-with-most-popular{
-    display: flex;
-    flex-direction: row;
-
-}
 
 @media screen and (max-width: 768px) {
     
@@ -445,6 +430,10 @@ header, main{
     .filter-button{
         margin-left: 5px;
     }
+
+    .marseille-accomodation-with-most-popular{
+        flex-direction: column-reverse;
+    }
 }
 
 @media only screen and (min-width : 769px) and (max-width : 992px) {
@@ -495,5 +484,20 @@ header, main{
         flex-wrap: wrap;
         justify-content: flex-start;
         
+    }
+
+    .marseille-accomodation-with-most-popular{
+        flex-direction: column-reverse;
+    }
+
+    .most-popular-bloc{
+        display: flex;
+        flex-direction: row; 
+        
+    }
+
+    .most-popular-case{
+        display: flex;
+        flex-basis: 33%;
     }
 }
