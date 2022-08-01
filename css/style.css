@@ -5,15 +5,35 @@
     list-style: none;
 }
 
-body{
-    @font-face {
-    font-family: Raleway, sans-serif;
-    src: url(font/raleway);
+
+@font-face {
+    font-family: Raleway;
+    src: url(../font/raleway/Raleway-Black.ttf);
+    font-weight: normal;
 }
 
+@font-face {
+    font-family: Raleway;
+    src: url(../font/raleway/Raleway-Bold.ttf);
+    font-weight: bold;
 }
-h1, h2, h3, h4, h5, h6, p, a{
-    font-family: raleway, sans-serif;
+
+p, a{
+    font-family: Raleway, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Raleway, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 22px;
+}
+
+h3{
+    font-size: 16px;
 }
 
 header, main{
@@ -36,7 +56,7 @@ header, main{
 
 .headerlogo{
     box-sizing: border-box;
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
@@ -44,6 +64,7 @@ header, main{
 }
 
 .headermenu{ 
+    min-width: 50px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -60,11 +81,13 @@ header, main{
 }
 
 .headermenu a:hover{
-    color: #0065FC;   
+    color: #0065FC; 
+
 }
 
 .navbarlink:hover{
     border-top: 2px solid #0065FC;
+    margin-top: -2px;
 }
 .navbarlink {
     box-sizing: border-box;
@@ -94,6 +117,7 @@ header, main{
 }
 
 .icon-location{
+    min-width: 55px;
     width: 55px;
     height: auto;
     background-color: #F2F2F2;
@@ -138,6 +162,18 @@ header, main{
 #icon-glass {
     display: none;
 }
+
+@media screen and (max-width: 768px) {
+    .research-bar{
+        min-width: 100px;
+    }
+
+    .button-research{
+        min-width: 60px;
+    }
+}
+
+
 
 .filters h3{
     font-size: 24px;
@@ -241,8 +277,28 @@ header, main{
     position: relative;
 }
 
+@media screen and (max-width: 768px) {
+    .marseille-accomodation-no-title a{
+        
+        min-width: 100%
+    }
+    .accomodation-bloc{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width : 769px) and (max-width : 992px) {
+    .accomodation-bloc{
+        min-width: 100%;
+    }
+
+    .marseille-accomodation-no-title a{
+        
+        min-width: 48%; 
+    }
+}
+
 .marseille-accomodation-with-most-popular p{
-    
     color: black;
 }
 
@@ -264,6 +320,7 @@ header, main{
     font-weight: bold;
     color: black;
     margin-top: 20px;
+    font-family: Raleway-Bold, sans-serif;
 }
 
 .most-popular{
@@ -276,6 +333,7 @@ header, main{
 .most-popular-head{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 
@@ -286,12 +344,9 @@ header, main{
     box-shadow: 0 2px 2px 0 grey;
     box-sizing: border-box;
     padding: 5px;
-    
+    margin-bottom: 10px;
 }
 
-.most-popular-bloc a{
-   
-}
 
 .most-popular-case{
     display: flex;
@@ -321,6 +376,9 @@ header, main{
     padding: 15px;
 }
 
+@media only screen and (min-width : 769px) and (max-width : 992px) {
+   
+}
 
 .show-more a{
     font-weight: bold;
