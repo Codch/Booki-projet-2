@@ -4,15 +4,18 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Google Fonts-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-        
         <script src="https://kit.fontawesome.com/da92682e8f.js" crossorigin="anonymous"></script>
 
         <title>Booki - Planifie tes vacances !</title>
     </head>
     <body>
+        <!-- Section 1 Navbar -->
         <header class="header">
             <nav class="navbar">
                 <div class="headerlogo"><a href="#"><img src="images/logo/Booki@3x.png" alt="logo"></a> 
@@ -25,8 +28,10 @@
                 </div>
             </nav>
         </header> 
+
         <main>
-                <div>
+            <!-- Section 2 Research -->
+                <div class="catch-sentence">
                     <h1 class="title-h1">Trouver votre hébergement pour des vacances de rêve</h1>
                     <p class="subtitle">En plein centre ville ou pleine nature</p>
                 </div>
@@ -54,10 +59,12 @@
                     <i class="fas fa-thin fa-circle-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div> 
+
+                <!-- Section 3 Accommodation -->
                 <section class="blocs">
                     <div class="marseille-accomodation-with-most-popular">
                         <div class="marseille-accomodation">
-                            <h2 class="title-h2" #title-2-accomodation>Hébergements à Marseille</h2>
+                            <h2 class="title-h2">Hébergements à Marseille</h2>
                             <div class="marseille-accomodation-no-title">
                                 <a href="#">
                                 <div class="accomodation-bloc">
@@ -146,7 +153,8 @@
                             </div>
                         <a href="#" class="show-more">Afficher Plus</a>
                         </div>
-                    
+                        
+                        <!-- Section 3.1 Most popular (Accommodation) -->
                         <div class="most-popular">
                             <div class="most-popular-head">
                                 <h2>Les plus populaires</h2>
@@ -214,6 +222,8 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- Section 4 Activities -->
                     <div class="marseille-activities">
                         <h2>Activités à Marseille</h2>
                         <div class="marseille-activities-bloc">
@@ -273,10 +283,30 @@
                         </div>
                         
                     </div>
-    
-    
+                </section> 
+        </main>
+                
+            <!-- Section 5 Footer -->
+            <footer class="footer">
+                <div class="footer-blocs">
+                    <div class="footer-bloc">
+                        <h3 class="footer-title">À propos</h3>
+                        <a class="footer-link">Fonctionnement du site</a>
+                        <a class="footer-link">Consitions générales de vente</a>
+                        <a class="footer-link">Données et confidentialité</a>
+                    </div>
+                    <div class="footer-bloc">
+                        <h3 class="footer-title">Nos hébérgements</h3>
+                        <a class="footer-link">Charte qualité</a>
+                        <a class="footer-link">Soumettre votre hôtel</a>
                     
-                </section>    
-                    
-            </main>
-        </body>
+                    </div>
+                    <div class="footer-bloc footer-bloc-assistance">
+                        <h3 class="footer-title">Assistance</h3>
+                        <a class="footer-link">Centre d'aide</a>
+                        <a class="footer-link">Nous contacter</a>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>

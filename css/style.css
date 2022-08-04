@@ -18,8 +18,19 @@
     font-weight: bold;
 }
 
-body{
+main, header{
     padding: 2%;
+}
+
+@media screen and (max-width: 768px){
+    main{
+        padding: 0;
+    }
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 p, a{
@@ -40,6 +51,8 @@ h2{
 h3{
     font-size: 16px;
 }
+
+/*Section 1 Navbar et Header*/
 
 header, main{
     margin : 0
@@ -104,6 +117,7 @@ header, main{
     border-top: 2px solid #0065FC;
     margin-top: -2px;
 }
+
 .navbarlink {
     box-sizing: border-box;
     height: 100%;
@@ -115,12 +129,90 @@ header, main{
     justify-content: center;
 }
 
+@media screen and (max-width: 768px){
+    .navbarlink:hover{
+        border-bottom: 2px solid #0065FC;
+        border-top: 0px;
+    }
 
-  .title-h1 {
+    .navbarlink{
+        box-sizing: border-box;
+        width: 50%;
+        min-width: 170px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: stretch;
+    }
+    
+    .headerlogo {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar img{
+        margin: 0%;
+    }
+ 
+    .headermenu {
+        height: 50%;
+        width: 100%;
+        display: flex;
+           
+    }
+}
+
+    @media only screen and (min-width : 769px) and (max-width : 992px){
+        .navbarlink:hover{
+            border-bottom: 2px solid #0065FC;
+            border-top: 0px;
+        }
+    
+        .navbarlink{
+            box-sizing: border-box;
+            width: 50%;
+            min-width: 170px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: stretch;
+        }
+        
+        .headerlogo {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .navbar img{
+            margin: 0%;
+        }
+     
+        .headermenu {
+            height: 50%;
+            width: 100%;
+            display: flex;
+               
+        }
+    }
+
+
+/*Section 2 Research*/
+
+.title-h1 {
     font-size: 32px;
     font-weight: bold;
     margin: 15px 0 15px 0;
-  }
+}
   
   .subtitle {
     margin-bottom: 30px;
@@ -153,6 +245,7 @@ header, main{
     border: none;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
+    font-family: raleway,sans-serif;
 }
 
 .research-bar::placeholder {
@@ -185,6 +278,10 @@ header, main{
 
     .button-research{
         min-width: 60px;
+    }
+
+    .research-box{
+        justify-content: center;
     }
 }
 
@@ -245,23 +342,80 @@ header, main{
     margin: 0 15px 15px 0;
 }
 
+@media screen and (max-width: 768px){
+    .catch-sentence, .research-box, .filters, .info{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .title-h1{
+        font-size: 24px;
+    }
+
+    .research-box{
+        margin-bottom: 10px;
+    }
+
+   .button-research{
+    border-radius: 14px;
+   }
+
+    #button-research{
+        display: none;
+    }
+
+    #icon-glass{
+        display: initial;
+        width: 60px;
+    }
+
+    .filters{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .filters-ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+
+    .filter-button{
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (min-width : 769px) and (max-width : 992px){
+    .title-h1{
+        font-size: 24px;
+    }
+
+    .filters-ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;   
+    }
+}
+
+/*Section 3 accomodation*/
+
 .marseille-accomodation-with-most-popular{
     display: flex;
     gap: 30px;
 }
 
-.marseille-accomodation-with-most-popular > div{
-    border-radius: 20px;
-    background-color: #F2F2F2;
-    padding: 25px;
-}
+
 
 .marseille-accomodation{ 
        
     flex-basis: 66%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; 
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    padding: 25px;
     
 }
 
@@ -284,7 +438,7 @@ header, main{
 .accomodation-bloc{
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 2px 2px 0 grey;
+    box-shadow:  0 0 20px #0000002e;
     box-sizing: border-box;
     padding: 5px;
     flex-grow: 1;
@@ -294,11 +448,19 @@ header, main{
 
 @media screen and (max-width: 768px) {
     .marseille-accomodation-no-title a{
-        
-        min-width: 100%
+         min-width: 100%
     }
+
     .accomodation-bloc{
         width: 100%;
+    }
+
+    .marseille-accomodation-with-most-popular{
+        flex-direction: column-reverse;
+    }
+    
+    .marseille-accomodation{
+        background-color: white;
     }
 }
 
@@ -307,8 +469,11 @@ header, main{
         min-width: 100%;
     }
 
+    .marseille-accomodation-with-most-popular{
+        flex-direction: column-reverse;
+    }
+
     .marseille-accomodation-no-title a{
-        
         min-width: 48%; 
     }
 }
@@ -338,11 +503,16 @@ header, main{
     font-family: Raleway-Bold, sans-serif;
 }
 
+/*Section 3.1 Most popular (Accommodation)*/
+
 .most-popular{
     flex-basis: 33%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    padding: 25px;
 }
 
 .most-popular-head{
@@ -356,7 +526,7 @@ header, main{
 .most-popular-bloc{
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 2px 2px 0 grey;
+    box-shadow:  0 0 20px #0000002e;
     box-sizing: border-box;
     padding: 5px;
     margin-bottom: 10px;
@@ -421,6 +591,37 @@ header, main{
     color: #d9d9d9;
 }
 
+@media screen and (max-width: 768px){
+    .most-popular{
+        border-radius: 0;
+    }
+
+    .most-popular-head{
+        margin: 20px 10px;
+    }
+}
+
+@media only screen and (min-width : 769px) and (max-width : 992px){
+    .most-popular-bloc{
+        display: flex;
+        flex-direction: row; 
+        
+    }
+
+    .most-popular-case{
+        display: flex;
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .marseille-accomodation-with-most-popular > div{
+        padding: 10px;
+    }
+}
+
+/*Section 4 Activities*/
+
 .marseille-activities{
     width: 100%;
     margin-top: 50px;
@@ -428,10 +629,6 @@ header, main{
 
 .marseille-activities h2{
     margin-bottom: 20px;
-}
-
-.marseille-activities h3{
-    
 }
 
 .marseille-activities-bloc{
@@ -484,160 +681,89 @@ header, main{
 }
 
 @media only screen and (min-width : 769px) and (max-width : 992px) {
+    
     .marseille-activities-bloc{
-        height: 300px;
-    }
-
-    .marseille-activities-card img{
-        height: calc(100% - 40px);
-    }
-
-    .marseille-activities-name{
-        height: 40px;
-        padding: 5px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    
-    
-    .navbarlink:hover{
-        border-bottom: 2px solid #0065FC;
-        border-top: 0px;
-    }
-
-    .navbarlink{
-        box-sizing: border-box;
-        width: 50%;
-        min-width: 170px;
-    }
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: stretch;
-    }
-    
-    .headerlogo {
-        height: 50%;
-        width: 100%;
-        display: flex;
+        flex-direction: row;
+        height: auto;
+        gap: 25px;
         justify-content: center;
     }
 
-    .navbar img{
-        margin: 0%;
+    .marseille-activities-bloc a{
+        flex-basis: 45%;
+        min-width: none;
+        max-width: none;
+        height: 200px;
     }
- 
-    .headermenu {
-        height: 50%;
-        width: 100%;
-        display: flex;
-           
-    }
-    .title-h1{
-        font-size: 24px;
-    }
-
-    .research-box{
-        margin-bottom: 10px;
-    }
-
-   .button-research{
-    border-radius: 14px;
-   }
-
-    #button-research{
-        display: none;
-    }
-
-    #icon-glass{
-        display: initial;
-        width: 60px;
-    }
-
-    .filters{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    .filters-ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        
-    }
-
-    .filter-button{
-        margin-left: 5px;
-    }
-
-    .marseille-accomodation-with-most-popular{
-        flex-direction: column-reverse;
-    }
+    
 }
 
-@media only screen and (min-width : 769px) and (max-width : 992px) {
-    
-    
-    .navbarlink:hover{
-        border-bottom: 2px solid #0065FC;
-        border-top: 0px;
+@media screen and (max-width: 768px){
+    .marseille-activities{
+        padding: 10px;
     }
 
-    .navbarlink{
-        box-sizing: border-box;
-        width: 50%;
-        min-width: 170px;
-    }
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: stretch;
-    }
-    
-    .headerlogo {
-        height: 50%;
-        width: 100%;
-        display: flex;
+    .marseille-activities-bloc{
+        flex-direction: row;
+        height: auto;
+        gap: 25px;
         justify-content: center;
     }
 
-    .navbar img{
-        margin: 0%;
-    }
- 
-    .headermenu {
-        height: 50%;
-        width: 100%;
-        display: flex;
-           
-    }
-    .title-h1{
-        font-size: 24px;
-    }
-
-    .filters-ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        
-    }
-
-    .marseille-accomodation-with-most-popular{
-        flex-direction: column-reverse;
-    }
-
-    .most-popular-bloc{
-        display: flex;
-        flex-direction: row; 
-        
-    }
-
-    .most-popular-case{
-        display: flex;
+    .marseille-activities-bloc a{
         flex-basis: 100%;
+        min-width: none;
+        max-width: none;
+        height: 200px;
     }
 }
+
+/*Section 5 Footer*/
+
+.footer {
+    width: 100vw;
+    background: #F2F2F2;
+    padding: 20px;  
+}
+  
+.footer-blocs {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1440px;
+}
+  
+.footer-bloc {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+    max-width: 30%;
+}
+
+  
+.footer-bloc > * {
+    margin-bottom: 10px;
+}
+  
+.footer-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+  
+.footer-link:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width: 768px){
+    .footer-blocs{
+        flex-direction: column;
+    }
+
+    .footer-bloc{
+        min-width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+}  
