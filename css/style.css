@@ -19,13 +19,17 @@
 }
 
 main, header{
-    padding: 2%;
+    padding: 0 40px 0 30px;
 }
 
 @media screen and (max-width: 768px){
     main{
         padding: 0;
     }
+}
+
+@media only screen and (min-width : 769px) and (max-width : 992px){
+
 }
 
 body{
@@ -68,7 +72,10 @@ header, main{
 }
 
 @media screen and (max-width: 768px){
-    justify-content: center;
+    .navbar{
+        justify-content: center;
+    }
+    
 }
 
 .navbar img{
@@ -691,7 +698,7 @@ header, main{
 
     .marseille-activities-bloc a{
         flex-basis: 45%;
-        min-width: none;
+        
         max-width: none;
         height: 200px;
     }
@@ -712,7 +719,7 @@ header, main{
 
     .marseille-activities-bloc a{
         flex-basis: 100%;
-        min-width: none;
+        
         max-width: none;
         height: 200px;
     }
