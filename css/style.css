@@ -399,6 +399,10 @@ header, main{
 }
 
 @media screen and (max-width: 768px) {
+    .info{
+        padding-left: 15px;
+    }
+
     .filters{
         display: flex;
         flex-wrap: wrap;
