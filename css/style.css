@@ -321,6 +321,17 @@ header, main{
     align-items: center;
 }
 
+.filters ul li:hover {
+    cursor: pointer;
+    background: #DEEBFF;
+    transition-duration: 0.25s;
+  }
+
+.filters ul li:hover .icon-filter {
+    background: white;
+    transition-duration: 0.25s;
+  }
+
 .filter-button{
     border: solid #e2e2e2 2px;
     border-left: 0;
@@ -333,7 +344,7 @@ header, main{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    cur
+    cursor: pointer;
 }
 
 .icon-filter {
@@ -463,6 +474,12 @@ header, main{
     position: relative;
 }
 
+.accomodation-bloc:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: ease 0.4s;
+  }
+
 @media screen and (max-width: 768px) {
     .marseille-accomodation-no-title a{
          min-width: 100%
@@ -548,6 +565,12 @@ header, main{
     padding: 5px;
     margin-bottom: 10px;
 }
+
+.most-popular-bloc:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: ease 0.4s;
+  }
 
 
 .most-popular-case{
@@ -642,6 +665,7 @@ header, main{
 .marseille-activities{
     width: 100%;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .marseille-activities h2{
@@ -669,8 +693,13 @@ header, main{
     box-shadow:  0 0 20px #0000002e;
     height: 100%;
     overflow: hidden;
-
 }
+
+.marseille-activities-card:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: ease 0.4s;
+  }
 
 .marseille-activities-card-tall{
     height: 100%;
