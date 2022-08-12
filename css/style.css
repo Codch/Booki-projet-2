@@ -482,7 +482,7 @@ header, main{
 
 @media screen and (max-width: 768px) {
     .marseille-accomodation-no-title a{
-         min-width: 100%
+         min-width: 95%
     }
 
     .accomodation-bloc{
@@ -502,6 +502,8 @@ header, main{
     .accomodation-bloc{
         min-width: 100%;
     }
+
+    
 
     .marseille-accomodation-with-most-popular{
         flex-direction: column-reverse;
@@ -635,6 +637,10 @@ header, main{
     .most-popular{
         border-radius: 0;
     }
+
+    .most-popular a{
+        max-width: 97%
+   }
 
     .most-popular-head{
         margin: 20px 10px;
