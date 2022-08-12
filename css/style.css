@@ -237,6 +237,16 @@ header, main{
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 768px){
+    .catch-sentence, .research-box, .filters, .info{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .title-h1{
+        font-size: 24px;
+    }
+}
+
 .icon-location{
     min-width: 55px;
     width: 55px;
@@ -254,7 +264,7 @@ header, main{
 
 .research-bar{
     padding-left: 20px;
-    height: 50px;
+    height: 55px;
     width: 220px;
     border: none;
     border-top: 1px solid #F2F2F2;
@@ -296,6 +306,23 @@ header, main{
 
     .research-box{
         justify-content: center;
+    }
+
+    .research-box{
+        margin-bottom: 10px;
+    }
+
+   .button-research{
+    border-radius: 14px;
+   }
+
+    #button-research{
+        display: none;
+    }
+
+    #icon-glass{
+        display: initial;
+        width: 60px;
     }
 }
 
@@ -369,32 +396,7 @@ header, main{
     margin: 0 15px 15px 0;
 }
 
-@media screen and (max-width: 768px){
-    .catch-sentence, .research-box, .filters, .info{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .title-h1{
-        font-size: 24px;
-    }
-
-    .research-box{
-        margin-bottom: 10px;
-    }
-
-   .button-research{
-    border-radius: 14px;
-   }
-
-    #button-research{
-        display: none;
-    }
-
-    #icon-glass{
-        display: initial;
-        width: 60px;
-    }
-
+@media screen and (max-width: 768px) {
     .filters{
         display: flex;
         flex-wrap: wrap;
@@ -416,6 +418,12 @@ header, main{
 @media only screen and (min-width : 769px) and (max-width : 992px){
     .title-h1{
         font-size: 24px;
+    }
+
+    .filters{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     .filters-ul{
@@ -805,10 +813,6 @@ header, main{
 .footer-link:hover {
     cursor: pointer;
     text-decoration-line: underline;
-}
-
-@media only screen and (min-width : 769px) and (max-width : 992px){
-
 }
 
 @media screen and (max-width: 768px){
